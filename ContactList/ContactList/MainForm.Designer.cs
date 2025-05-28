@@ -35,26 +35,27 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(297, 57);
+            label1.Location = new Point(264, 54);
             label1.Name = "label1";
-            label1.Size = new Size(140, 21);
+            label1.Size = new Size(133, 20);
             label1.TabIndex = 0;
             label1.Text = "Danh Sách Liên Hệ";
             // 
             // btn_Add
             // 
-            btn_Add.Location = new Point(310, 195);
+            btn_Add.Location = new Point(276, 186);
             btn_Add.Name = "btn_Add";
-            btn_Add.Size = new Size(94, 29);
+            btn_Add.Size = new Size(84, 28);
             btn_Add.TabIndex = 1;
             btn_Add.Text = "Thêm Liên Hệ";
             btn_Add.UseVisualStyleBackColor = true;
+            btn_Add.Click += btn_Add_Click;
             // 
             // MainForm
             // 
-            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(711, 429);
             Controls.Add(btn_Add);
             Controls.Add(label1);
             Name = "MainForm";
