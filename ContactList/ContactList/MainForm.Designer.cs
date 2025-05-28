@@ -1,6 +1,6 @@
 ﻿namespace ContactList
 {
-    partial class Form1
+    partial class MainForm
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,12 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            label1 = new Label();
+            btn_Add = new Button();
+            SuspendLayout();
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(297, 57);
+            label1.Name = "label1";
+            label1.Size = new Size(140, 21);
+            label1.TabIndex = 0;
+            label1.Text = "Danh Sách Liên Hệ";
+            // 
+            // btn_Add
+            // 
+            btn_Add.Location = new Point(310, 195);
+            btn_Add.Name = "btn_Add";
+            btn_Add.Size = new Size(94, 29);
+            btn_Add.TabIndex = 1;
+            btn_Add.Text = "Thêm Liên Hệ";
+            btn_Add.UseVisualStyleBackColor = true;
+            // 
+            // MainForm
+            // 
+            AutoScaleDimensions = new SizeF(9F, 21F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(800, 450);
+            Controls.Add(btn_Add);
+            Controls.Add(label1);
+            Name = "MainForm";
+            Text = "Form1";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label label1;
+        private Button btn_Add;
     }
 }
