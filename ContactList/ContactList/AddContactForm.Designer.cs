@@ -35,6 +35,7 @@
             btn_save = new Button();
             txt_Email = new TextBox();
             label3 = new Label();
+            label4 = new Label();
             SuspendLayout();
             // 
             // label1
@@ -95,11 +96,21 @@
             label3.TabIndex = 5;
             label3.Text = "Email";
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(434, 161);
+            label4.Name = "label4";
+            label4.Size = new Size(136, 21);
+            label4.TabIndex = 7;
+            label4.Text = "Thông tin bổ sung";
+            // 
             // AddContactForm
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label4);
             Controls.Add(txt_Email);
             Controls.Add(label3);
             Controls.Add(btn_save);
@@ -122,5 +133,6 @@
         private Button btn_save;
         private TextBox txt_Email;
         private Label label3;
+        private Label label4;
     }
 }
